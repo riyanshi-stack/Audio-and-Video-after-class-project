@@ -1,19 +1,48 @@
 <html>
-    <style>
-        body{
-            background-color: aquamarine;
-        }
-    </style>
     <body>
-        <h1>Addition in JavaScript</h1>
-        <p>Addition is the sum of all the numbers.</p>
-        <p id="result"></p>
+        <p id="demo"></p>
         <script>
-            var num1 = 5;
-            var num2 = 12;
-            var num3 = 76;
-            var sum = num1 + num2 + num3
-            document.getElementById("result").innerHTML = "The total sum is:" +sum
+            var month;
+            switch (new date().getMonth()) {
+                case 0:
+                    month = "January";
+                    break;
+                    case 1:
+                    month = "February";
+                    break;
+                    case 2:
+                    month = "March";
+                    break;
+                    case 3:
+                    month = "April";
+                    break;
+                    case 4:
+                    month = "May";
+                    break;
+                    case 5:
+                    month = "June";
+                    break;
+                    case 6:
+                    month = "July";
+                    break;
+                    case 7:
+                    month = "August";
+                    break;
+                    case 8:
+                    month = "September";
+                    break;
+                    case 9:
+                    month = "October";
+                    break;
+                    case 10:
+                    month = "November";
+                    break;
+                    case 11:
+                    month = "December";
+                    break;
+
+            }
+            document.getElementById("demo").innerHTML = "The month is" + month;
         </script>
     </body>
 </html>
