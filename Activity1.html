@@ -1,19 +1,19 @@
 <html>
     <head>
-        <title>Array and Call Stack</title>
+        <title>Values in HTML DOM</title>
     </head>
     <body>
-        <h2> Join() and Pop() in HTML</h2>
-        <p>Join() command joins the variable in a string while the Pop() command removes the last element of array variable.</p>
+        <h1>Join() and Pop() in HTML</h1>
+        <p><mark><b>The Join() command allows the user to join the string at a line whereas the Pop() command allows the user to remove or delete the last element of a array value.</b></mark></p>
         <p id="myjoin"></p>
         <p id="myfirstpop"></p>
         <p id="mysecondpop"></p>
         <script>
-            var friends = ["Nitya", "Suhani", "Advika" , "Eshani" , "Itika" , "Aradhana"];
-            document.getElementById("myjoin").innerHTML = friends.join(" * ");
-            document.getElementById("myfirstpop").innerHTML = friends;
-            friends.pop()
-            document.getElementById("mysecondpop").innerHTML = friends;
+                var planets = ["Venus", "Mercury", "Earth", "Mars", "Jupiter", "Saturn", "Uranus"]
+                document.getElementById("myjoin").innerHTML = planets.join(" * ")
+                document.getElementById("myfirstpop").innerHTML = planets;
+                planets.pop()
+                document.getElementById("mysecondpop").innerHTML = planets;
         </script>
     </body>
 </html>
