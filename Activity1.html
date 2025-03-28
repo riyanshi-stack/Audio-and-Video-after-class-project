@@ -1,19 +1,17 @@
 <html>
-    <head>
-        <title>Values in HTML DOM</title>
-    </head>
     <body>
-        <h1>Join() and Pop() in HTML</h1>
-        <p><mark><b>The Join() command allows the user to join the string at a line whereas the Pop() command allows the user to remove or delete the last element of a array value.</b></mark></p>
-        <p id="myjoin"></p>
-        <p id="myfirstpop"></p>
-        <p id="mysecondpop"></p>
+        <p>Let's learn the use of while() loop in Html</p>
+        <button type="button" onclick="myFunction()">Let's Learn</button>
+        <p id="number"></p>
         <script>
-                var planets = ["Venus", "Mercury", "Earth", "Mars", "Jupiter", "Saturn", "Uranus"]
-                document.getElementById("myjoin").innerHTML = planets.join(" * ")
-                document.getElementById("myfirstpop").innerHTML = planets;
-                planets.pop()
-                document.getElementById("mysecondpop").innerHTML = planets;
+             function myFunction() {
+            var text = "";
+            var i = 0;
+            while (i < 20) {
+                text += "<br> The number is " +i;i++
+            }
+            document.getElementById("number").innerHTML = text;
+        }
         </script>
     </body>
 </html>
