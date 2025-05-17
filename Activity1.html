@@ -1,20 +1,65 @@
 <html>
     <head>
-        <script>
-        function validateForm() {
-            var x = document.forms["myForm"]["fname"].value;
-            if ( x == "") {
-                alert("Name is compelsory");
-                return false;
-            }
-            else document.write("Name submitted");
-        }
-        </script>
+        <title>WEBSITE</title>
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body>
-        <form name="myForm" onsubmit="validateForm()">
-            Name:<input type="text" name="fname">
-            <button>Submit</button>
-        </form>
-    </body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#One">About-Me</a>
+        <a href="#contact">Gallery</a>
+        <a href="#about">Contact-Us</a>
+    </div><br>
+    <span class="border trans" style="font-size:40px">
+        <center>Welcome to My New Website</center>
+    </span><br>
+    <section>
+        <h2><center>MySelf</center></h2>
+        <p>My name is Riyansi Sinha.I am 11 years old.I study in Somerville School 6th class.My Hobbies are to dance , play badminton and do drawing.</p>
+    </section>
+    <div class="image1.jpg">
+        <div class="ptext">
+            <span class="border trans">
+                Image Two Text
+            </span>
+        </div>
+    </div>
+
+    <div class="image2.jpg">
+        <div class="ptext">
+            <span class="border trans">
+                Image Two Text
+            </span>
+        </div>
+    </div>
+
+
+    <section clasd="section section-dark">
+        All@copy rights reserved by Riyanhi Sinha
+    </section>
+
+    <section>
+        <img class="mySlides" src="pimg1" style="height:500px; width:1350px">
+
+        <img class="mySlides" src="pimg2" style="height:500px; width:1350px">
+
+        <img class="mySlides" src="pimg3" style="height:500px; width:1350px">
+    </section>
+    <script>
+        //Automatic Slideshow -change every 3 seconds
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementByClassName("mySlides");
+            for (i = 0 < x.lenght; i++) {
+                x[i].style.display = "none";
+            }
+
+            myIndex++
+            if (myIndex > x.lenght) {myIndex = 1}
+            x[myIndex - 1].style.display = "block";
+            seTimeout(carousel, 3000);
+        }
+    </script>
 </html>
